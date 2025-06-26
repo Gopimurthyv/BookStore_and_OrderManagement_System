@@ -81,9 +81,7 @@ class OrderController extends Controller
 
             return redirect()->route('order.index')->with('success', 'Order placed successfully!');
 
-        } catch(ValidationException $e){
-            return back()->withInput()->withErrors($e->validator);
-        }catch(\Exception $e){
+        } catch(\Exception $e){
             return back()->with('error',$e->getMessage())->withInput();
         }
     }
