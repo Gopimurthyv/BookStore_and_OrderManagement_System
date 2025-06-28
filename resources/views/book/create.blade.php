@@ -179,8 +179,9 @@
                 <button class="btn btn-secondary btn-sm" id="addStock" type="button">Add More</button>
             </div>
         </div>
-        <div>
-            <button class="btn btn-success" type="submit">ADD BOOKS</button>
+        <div class="">
+            <button class="btn btn-success form-control mb-2" type="submit">ADD BOOKS</button>
+            <a href="{{ route('book.index') }}" class="btn btn-danger form-control">CANCEL</a>
         </div>
     </form>
 @endsection

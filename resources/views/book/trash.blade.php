@@ -43,7 +43,7 @@
                         <td >
                             <div class="d-flex gap-2">
                                 <a href="{{ route('book.restore',$book->id) }}" class="btn btn-sm "><img src="{{ asset('backup.png') }}" width="35"></a>
-                                <a href="{{ route('book.destroy',$book->id) }}" class="btn  btn-sm" onclick="return confirm('Are you sure you want to delete?');"><img src="{{ asset('delete (1).png') }}" width="35"></a>
+                                <a href="{{ route('book.forceDelete',$book->id) }}" class="btn  btn-sm" onclick="return confirm('Are you sure you want to delete?');"><img src="{{ asset('delete (1).png') }}" width="35"></a>
                             </div>
                         </td>
                     </tr>

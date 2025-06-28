@@ -255,7 +255,7 @@ class BookController extends Controller
     }
 
     public function bookCategory(Request $request){
-        $query = Book::with(['supplier','stocks','supplier','orderItems'])->whereNull('deleted_at');
+        $query = Book::with(['supplier','stocks','orderItems'])->whereNull('deleted_at');
 
         if($request->filled('category')){
             $query->where('categories', 'like', '%'.$request->category.'%');

@@ -53,9 +53,9 @@
         </div>
 
         <button type="submit" class="btn btn-primary">🛒 Place Order</button>
-        <div class="text-end">
-            <a href="{{ route('book.index') }}" class="btn btn-sm btn-danger">Back</a>
-        </div>
+
+        <a href="{{ route('book.index') }}" class="btn me-2 btn-danger">Back</a>
+
     </form>
 </div>
 
